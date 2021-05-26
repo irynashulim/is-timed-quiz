@@ -1,0 +1,70 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg,rgb(230, 161, 233) 0%, rgb(121, 37, 116) 100%);
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(219, 172, 208, 0.664);
+    transform: scale(1.02);
+    transform: transform 100ms;
+
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color:black;
+}
+
+.choice-text {
+padding: 2rem;
+width: 100%;
+}
+
+.correct {
+    background: chartreuse;
+}
+
+.incorrect {
+    background: red;
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.display-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid purple;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rebeccapurple;
+    width: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container{
+        min-width: 40rem;
+    }
+}
