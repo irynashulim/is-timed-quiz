@@ -1,3 +1,14 @@
+.quiz-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
 .choice-container {
     display: flex;
     margin-bottom: 0.8rem;
@@ -39,28 +50,9 @@ width: 100%;
     justify-content: space-between;
 }
 
-.display-prefix {
+.timer {
     text-align: center;
-    font-size: 2rem;
-}
-
-.display-main-text {
-    text-align: center;
-}
-
-#progressBar {
-    width: 20rem;
-    height: 3rem;
-    border: 0.2rem solid purple;
-    margin-top: 2rem;
-    border-radius: 50px;
-    overflow: hidden;
-}
-
-#progressBarFull {
-    height: 100%;
-    background: rebeccapurple;
-    width: 0%;
+    font-size: 4rem;
 }
 
 @media screen and (max-width: 768px) {

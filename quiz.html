@@ -9,24 +9,17 @@
     <link rel="stylesheet" href="./assets/css/quiz.css">
 </head>
 <body>
-    <div class="container">
+<!--quiz container-->
+    <div class="quiz-container">
       <div id="quiz" class="justify-center flex-column">
           <div id="display">
-              <div class="display-item">
-                  <p id="progressText" class="display-prefix">
-                      Question
-                  </p>
-                  <div id="progressBar">
-                      <div id="progressBarFull"></div>
+              <div class="timer">
+                  <div class="time-left-txt">
+                      Time left:
                   </div>
-              </div>
-              <div class="display-item">
-                  <p class="display-prefix">
-                      Score
-                  </p>
-                  <h1 class="display-main-text" id="score">
+                  <div class="timer-sec">
                       0
-                  </h1>
+                  </div>
               </div>
           </div>
           <h1 id="question">Example question?</h1>
@@ -48,6 +41,13 @@
 </div>
       </div>
     </div>
+<!-- Result container -->
+<div class="result_container">
+    <div class="complete_text">You've completed the Quiz!</div>
+    <div class="score_text">
+        <!--Score Result from JavaScript -->
+    </div>
+</div>
     <script src="./assets/js/questions.js"></script>
     <script src=./assets/js/script.js></script>
 </body>

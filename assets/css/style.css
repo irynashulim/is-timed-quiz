@@ -13,7 +13,7 @@
 h1 {
     font-size: 5.4rem;
     color: black;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 h2 {
@@ -35,6 +35,12 @@ h2 {
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+
+.flex-column p {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2rem;
 }
 
 .flex-center {
