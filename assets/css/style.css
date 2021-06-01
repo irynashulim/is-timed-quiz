@@ -1,90 +1,82 @@
-:root {
-    background-color: rgb(178, 194, 207);
-}
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 65.5%;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
-h1 {
-    font-size: 5.4rem;
-    color: black;
-    margin-bottom: 2rem;
+/* For sticky footer - used flexbox from https://css-tricks.com/couple-takes-sticky-footer/ */
+html, body {
+    height: 100%;
 }
 
-h2 {
-    font-size: 4.2rem;
-    margin-bottom: 4rem;
-}
-
-.container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.flex-column {
+body {
+    /* Background image CSS from https://web.dev/optimize-css-background-images-with-media-queries/*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* css so footer is at bottom of viewport */
     display: flex;
     flex-direction: column;
 }
 
-.flex-column p {
-    text-align: center;
-    font-size: 2rem;
-    padding-bottom: 2rem;
+/* Main content */
+main {
+    /* css so footer is at bottom of viewport */
+    flex: 1 0 auto;
 }
 
-.flex-center {
-    justify-content: center;
-    align-items: center;
+/* Footer */
+footer {
+    /* css so footer is at bottom of viewport */
+    flex-shrink: 0;
+    font-size: .5rem;
 }
 
-.text-center {
-    text-align: center;
+/* hide sections until they are shown via the click events */
+#questions,
+#final,
+#highscores,
+#yaynay {
+    display: none;  
+  } 
+
+/* Remove bullet points from answers list */
+ul.nobullets {
+list-style-type: none;
 }
 
-.hidden {
-    display: none;
-}
-
-.btn {
-   font-size: 2.4rem;
-   padding: 2rem 0;
-   width: 30rem;
-   text-align: center;
-   margin-bottom: 1rem;
-   text-decoration: none;
-   color: black;
-   background:linear-gradient(90deg,pink 0%, salmon 100%);
-   border-radius: 4px;
-}
-
-.btn:hover {
-    cursor:pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(219, 172, 208, 0.664);
-    transition: transform 150ms;
-    transform: scale(1.03);
-}
-
-.btn[disabled]:hover {
-    cursor: not-allowed;
+/* Answer button styling */
+.ansBtn,
+.ansBtn:hover,
+.ansBtn:active,
+.ansBtn:focus,
+.ansBtn:active:focus {
     box-shadow: none;
-    transform: none;
+    outline: none;
+    background-color: rgb(32, 101, 122);
 }
 
-#highscore-btn {
-    background: linear-gradient(90deg,rgb(235, 107, 128) 0%, rgb(143, 69, 61) 100%);;
+/* Media queries for background image from https://web.dev/optimize-css-background-images-with-media-queries/ */
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        background-color: lightblue;
+    }
 }
 
-#highscore-btn:hover {
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(219, 172, 208, 0.664);
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-image: url(../assets/images/markus-spiske-da7AMukpg2k-unsplash-med.jpg);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    body {
+	    background-image: url(../assets/images/markus-spiske-da7AMukpg2k-unsplash-med.jpg);
+   }
 }
