@@ -11,11 +11,7 @@ html, body {
 }
 
 body {
-    /* Background image CSS from https://web.dev/optimize-css-background-images-with-media-queries/*/
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  background-color: rgb(227, 236, 246);
     /* css so footer is at bottom of viewport */
     display: flex;
     flex-direction: column;
@@ -38,7 +34,7 @@ footer {
 #questions,
 #final,
 #highscores,
-#yaynay {
+#correct-wrong {
     display: none;  
   } 
 
@@ -47,15 +43,29 @@ ul.nobullets {
 list-style-type: none;
 }
 
+#start-btn {
+    background-color: #fa8bff;
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+  transition: all .5s ease-out;
+  background-size: 1px 100px;
+  background-position: 0 -10px;
+}
 /* Answer button styling */
 .ansBtn,
-.ansBtn:hover,
 .ansBtn:active,
 .ansBtn:focus,
 .ansBtn:active:focus {
     box-shadow: none;
     outline: none;
-    background-color: rgb(32, 101, 122);
+    background: linear-gradient(90deg,rgb(113, 231, 235) 0%, rgb(180, 103, 175) 100%);
+    border-radius: 4px;
+}
+
+.ansBtn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(219, 172, 208, 0.664);
+    transform: scale(1.02);
+    transform: 100ms;
 }
 
 /* Media queries for background image from https://web.dev/optimize-css-background-images-with-media-queries/ */
@@ -70,13 +80,13 @@ list-style-type: none;
 /* Tablet */
 @media (min-width: 481px) and (max-width: 1024px) {
     body {
-        background-image: url(../assets/images/markus-spiske-da7AMukpg2k-unsplash-med.jpg);
+       
     }
 }
 
 /* Desktop */
 @media (min-width: 1025px) {
     body {
-	    background-image: url(../assets/images/markus-spiske-da7AMukpg2k-unsplash-med.jpg);
+	   
    }
 }

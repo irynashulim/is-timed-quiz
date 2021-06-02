@@ -9,9 +9,9 @@ let questions = [
         correctAnswer: 3,
     },
     {
+        question: "How to empty an array in JavaScript?",
         answers:
-            ["How to empty an array in JavaScript?",
-                "arrayList[]",
+               [ "arrayList[]",
                 "arrayList(0)",
                 "arrayList.length=0",
                 "arrayList.len(0)"],

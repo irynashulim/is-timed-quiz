@@ -2,35 +2,22 @@
 let timeEl = document.querySelector("p.time");
 let secondsLeft = 120;
 let scoreEl = document.querySelector("#score");
-
-const introEl = document.querySelector(".container");
-
-const questionsEl = document.querySelector(".quiz-container");
-
+const introEl = document.querySelector("#main-page");
+const questionsEl = document.querySelector("#questions");
 let questionEl = document.querySelector("#question");
-
 let questionCount = 0;
-
 const correctWrongEl = document.querySelector("#correct-wrong");
-
 const finalEl = document.querySelector("#final");
-
 let initialsInput = document.querySelector("#initials");
-
 const highscoresEl = document.querySelector("#highscores");
-
 let scoreListEl = document.querySelector("#score-list");
 let scoreList = [];
-
 const startBtn = document.querySelector("#start-btn");
-
-const ansBtn = document.querySelectorAll(".choice-text")
-
+const ansBtn = document.querySelectorAll("button.ansBtn")
 const ans1Btn = document.querySelector("#answer1");
 const ans2Btn = document.querySelector("#answer2");
 const ans3Btn = document.querySelector("#answer3");
 const ans4Btn = document.querySelector("#answer4");
-
 const submitScrBtn = document.querySelector("#submit-score");
 const goBackBtn = document.querySelector("#goback");
 const clearScrBtn = document.querySelector("#clearscores");
@@ -77,7 +64,7 @@ function setQuestion(id) {
 function checkAnswer(event) {
     event.preventDefault();
 
-// show section for yaynay and append message
+// show section for correct-wrong and append message
 correctWrongEl.style.display = "block";
 let p = document.createElement("p");
 correctWrongEl.appendChild(p);
