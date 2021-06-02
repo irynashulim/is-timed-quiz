@@ -43,14 +43,18 @@ ul.nobullets {
 list-style-type: none;
 }
 
-#start-btn {
+/* buttons styling */
+#start-btn,
+#goback,
+#clearscores,
+#submit-score {
     background-color: #fa8bff;
   background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
   transition: all .5s ease-out;
   background-size: 1px 100px;
   background-position: 0 -10px;
 }
-/* Answer button styling */
+
 .ansBtn,
 .ansBtn:active,
 .ansBtn:focus,
@@ -68,25 +72,26 @@ list-style-type: none;
     transform: 100ms;
 }
 
+#view-scores {
+    background-color: #fa8bff;
+    background-image: linear-gradient(45deg, #dbdad1 0%, #6ec8ec 52%, #2b64ff 90%);
+    transition: all .5s ease-out;
+    background-size: 1px 100px;
+    background-position: 0 -10px; 
+}
 /* Media queries for background image from https://web.dev/optimize-css-background-images-with-media-queries/ */
 
 /* Mobile */
 @media (max-width: 480px) {
-    body {
-        background-color: lightblue;
-    }
+    
 }
 
 /* Tablet */
 @media (min-width: 481px) and (max-width: 1024px) {
-    body {
-       
-    }
+   
 }
 
 /* Desktop */
 @media (min-width: 1025px) {
-    body {
-	   
-   }
+  
 }
